@@ -59,11 +59,9 @@ corr_matrix = np.corrcoef(transposed_matrix)
 books = rating_utility_matrix.columns
 books_list =  list(books)
 
-book_1984 = books_list.index('1984')
-print(book_1984)
+firstBook = books_list.index('1984')
 
-## We know it's the 17th index because of the output of the statement printing 'book_1984'
-corr_1984 = corr_matrix[17]
+corr_1984 = corr_matrix[firstBook]
 
 ## Print a list of book names that have a correlation score of between 0.8 and 1.0. 
 ## The higher the correlation coefficient, the stronger the relationship a book has
